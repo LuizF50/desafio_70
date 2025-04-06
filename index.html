@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Espacial das Matrizes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Missão Espacial das Matrizes </h1>
+        <p class="description">Insira os dados dos planetas e descubra quais atendem aos critérios (tamanho > 1000 e distância < 3000 da Terra).</p>
+        
+        <div class="data-table">
+            <div class="table-header">
+                <div class="header-cell">Nome do Planeta</div>
+                <div class="header-cell">Tamanho do Planeta</div>
+                <div class="header-cell">Distância da Terra</div>
+            </div>
+            
+            <div class="table-row">
+                <div class="cell"><input type="text" id="name1" value="Terra" class="planet-input"></div>
+                <div class="cell"><input type="number" id="size1" value="510072" class="planet-input"></div>
+                <div class="cell"><input type="number" id="distance1" value="0" class="planet-input"></div>
+            </div>
+            
+            <div class="table-row">
+                <div class="cell"><input type="text" id="name2" value="Marte" class="planet-input"></div>
+                <div class="cell"><input type="number" id="size2" value="1448" class="planet-input"></div>
+                <div class="cell"><input type="number" id="distance2" value="225" class="planet-input"></div>
+            </div>
+            
+            <div class="table-row">
+                <div class="cell"><input type="text" id="name3" value="Júpiter" class="planet-input"></div>
+                <div class="cell"><input type="number" id="size3" value="61419" class="planet-input"></div>
+                <div class="cell"><input type="number" id="distance3" value="588" class="planet-input"></div>
+            </div>
+            
+            <div class="table-row">
+                <div class="cell"><input type="text" id="name4" value="Saturno" class="planet-input"></div>
+                <div class="cell"><input type="number" id="size4" value="42700" class="planet-input"></div>
+                <div class="cell"><input type="number" id="distance4" value="1200" class="planet-input"></div>
+            </div>
+            
+            <div class="table-row">
+                <div class="cell"><input type="text" id="name5" value="Planeta-X" class="planet-input"></div>
+                <div class="cell"><input type="number" id="size5" value="950" class="planet-input"></div>
+                <div class="cell"><input type="number" id="distance5" value="3200" class="planet-input"></div>
+            </div>
+        </div>
+        
+        <button class="glow-on-hover" id="analyzeButton">ANALISAR PLANETAS!</button>
+        
+        <div class="result-container">
+            <h2>Resultado da Missão:</h2>
+            <div id="result" class="result-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
